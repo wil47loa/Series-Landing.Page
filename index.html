@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logo"><img src="img/RRR.png" alt="logo" ></a>
+
+             <div class="buscar">
+                <input type="text" placeholder="Buscar">
+                <div class="btp">
+                    <img src="img/lupa.png" alt="lupa">
+                </div>
+             </div>
+                 <ul class="menu">
+                    <li><a href="index.html">Iincio</a></li>
+                    <li><a href="#1">Tendencias</a></li>
+                    <li><a href="#2">Terror</a></li>
+                    <li><a href="#3">Accion</a></li>
+                    <li><a href="#">Iniciar secion</a></li>
+                 </ul>   
+        </nav> 
+        <div id="hero" >
+            <img src="img/order.png" alt="order">
+            <h2>LA SERI MAS VISTA</h2>
+            <p>Sigue las tramas criminales de una banda de los bajos fondos de Birmingham, en Inglaterra, que opera bajo el liderazgo de Tommy Shelby.</p>
+            <button id="boton">VER</button>
+        </div>
+        <div class="scrol">
+        </div>
+        <script src="js/web.js"></script>
+    </header>
+
+
+
+
+    <main>
+
+        <section class="section1" id="1">
+            <div class="tendencias">
+                <h2>Tendencias</h2>
+                <p>las series mas pupulares con mayor numero de reproduccion y con mayor puntuacion</p>
+    
+            </div>
+            <div class="slider" >
+                <span style="--i:14;"><img src="img/image14.jpg" alt=""></span>
+                <span style="--i:15;"><img src="img/image15.jpg" alt=""></span>
+                <span style="--i:16;"><img src="img/image16.jpg" alt=""></span>
+                <span style="--i:10;"><img src="img/image10.jpg" alt=""></span>
+                <span style="--i:17;"><img src="img/image17.jpg" alt=""></span>
+                <span style="--i:27;"><img src="img/image27.jpg" alt=""></span>
+                <span style="--i:29;"><img src="img/image29.jpg" alt=""></span>
+            </div>
+        </section>
+
+        <section class="section2" id="2">
+            <div class="tendencias">
+                <h2>Terror</h2>
+                <p>característica es el miedo a lo desconocido, hablamos de fantasmas, demonios o sucesos paranormales. De hecho se puede decir que casi todas las películas del género cuentan con tintes paranormales. Normalmente, en este subgénero la sangre y las escenas gore son más discretas.</p>
+    
+            </div>
+
+            <div class="slider" >
+                <span style="--i:35;"><img src="img/image35.jpg" alt=""></span>
+                <span style="--i:23;"><img src="img/image23.jpg" alt=""></span>
+                <span style="--i:20;"><img src="img/image20.jpg" alt=""></span>
+                <span style="--i:22;"><img src="img/image22.jpg" alt=""></span>
+                <span style="--i:21;"><img src="img/image21.jpg" alt=""></span>
+                <span style="--i:26;"><img src="img/image26.jpg" alt=""></span>
+            </div>
+        </section>
+
+        <section class="section3" id="3">
+            <div class="tendencias">
+                <h2>Accion</h2>
+                <p>Generalmente son películas que aportan un toque de adrenalina. Incluyen acrobacias físicas, persecuciones rescates y batallas, lo que las caracteriza principalmente.</p>
+    
+            </div>
+            <div class="slider" >
+                <span style="--i:12;"><img src="img/image12.jpg" alt=""></span>
+                <span style="--i:11;"><img src="img/image11.jpg" alt=""></span>
+                <span style="--i:24;"><img src="img/image24.png" alt=""></span>
+                <span style="--i:25;"><img src="img/image25.jpg" alt=""></span>
+                <span style="--i:30;"><img src="img/image30.jpg" alt=""></span>
+                <span style="--i:31;"><img src="img/image31.jpg" alt=""></span>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section4" id="#">
+            <div class="tendencias">
+                <h2>Accion</h2>
+                <p>Generalmente son películas que aportan un toque de adrenalina. Incluyen acrobacias físicas, persecuciones rescates y batallas, lo que las caracteriza principalmente.</p>
+    
+            </div>
+            <div class="slider" >
+                <span style="--i:12;"><img src="img/image12.jpg" alt="image12" onclick="fun(this, 4)"></span>
+                <span style="--i:11;"><img src="img/image11.jpg" alt="image11" onclick="fun(this, 4)"></span>
+                <span style="--i:24;"><img src="img/image24.png" alt="image24" onclick="fun(this, 4)"></span>
+                <span style="--i:25;"><img src="img/image25.jpg" alt="image25" onclick="fun(this, 4)"></span>
+                <span style="--i:30;"><img src="img/image30.jpg" alt="image30" onclick="fun(this, 4)"></span>
+                <span style="--i:31;"><img src="img/image31.jpg" alt="image31" onclick="fun(this, 4)"></span>
+            </div>
+
+            <!--Contenedor del item seleccionado  -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="img/image12.jpg" alt="" id="img">
+                    <h2 id="modelo">VIKINGOS</h2>
+                    <P id="descripcion">Serie de accion en la epoca mediabal</P>
+                    <span class="precio" id="precio">$ 10.000</span>
+                    <button>Ver Serie</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© Todos los derechos reservados</p>
+        <p>wilmerloaizacarranza@gmail.com</p>
+        <p>+57 3195945763</p>
+        <p>Bogota D.C</p>
+    </footer>
+</body>
+</html>
